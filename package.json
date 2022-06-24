@@ -1,0 +1,33 @@
+{
+  "name": "coin-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pm2": "cross-env PM2_HOME='./.pm2' pm2",
+    "start": "node scripts/start.js && node index.js",
+    "stop": "node scripts/stop.js",
+    "clean": "node scripts/clean.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-template": "node scripts/update-template.js",
+    "update-docker": "docker build -t registry.gitlab.com/shardus/applications/coin-app-template . && docker push registry.gitlab.com/shardus/applications/coin-app-template"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shardus/core": "file:../../shardus-global-server",
+    "@shardus/crypto-utils": "^4.0.3",
+    "deepmerge": "^4.2.2",
+    "got": "^9.6.0",
+    "vorpal": "^1.12.0"
+  },
+  "devDependencies": {
+    "@shardus/archiver": "3.2.4",
+    "@shardus/monitor-server": "2.0.3",
+    "cross-env": "^5.2.0",
+    "execa": "^1.0.0",
+    "pm2": "^5.1.2",
+    "shelljs": "^0.8.3",
+    "yarpm": "^0.2.1"
+  }
+}

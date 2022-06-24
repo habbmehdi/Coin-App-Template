@@ -1,0 +1,12 @@
+node_modules
+logs
+instances
+statistics.tsv
+wallet.json
+.pm2
+db
+archiver-db*
+archiver-logs
+monitor-logs
++db-old*
+build

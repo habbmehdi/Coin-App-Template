@@ -1,0 +1,19 @@
+{
+  "server": {
+    
+    "p2p": {
+      "minNodesToAllowTxs": 1,
+      "minNodes": 20
+    },
+    "ip": {
+      "externalIp": "127.0.0.1",
+      "externalPort": 9001,
+      "internalIp": "127.0.0.1",
+      "internalPort": 9005
+
+    },
+    "sharding": {
+      "nodesPerConsensusGroup": 3
+    }
+  }
+}
