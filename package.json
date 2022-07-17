@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@shardus/core": "file:../../shardus-global-server",
+    "@shardus/core": "2.6.13",
     "@shardus/crypto-utils": "^4.0.3",
     "deepmerge": "^4.2.2",
     "got": "^9.6.0",
